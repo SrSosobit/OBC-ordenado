@@ -1,0 +1,37 @@
+package com.soso;
+
+public class HolaMundo {
+    /**
+     * Entrada
+     * @param args
+     */
+
+    public static void main(String[] args){
+
+        //hola, esto es un commentario procedo a imprimir cada tipo de variable
+        System.out.println("HolaMundo");
+
+
+        byte Bite=2;
+        System.out.println("Bite "+Bite);
+        short Short=3;
+        System.out.println("Short "+Short);
+        int Int=5;
+        System.out.println("Int "+Int);
+        long Long=2888;
+        System.out.println("Long "+Long);
+        double Double=0.837;
+        System.out.println("Double "+Double);
+        float Float=0.2f;
+        System.out.println("Float "+Float);
+        boolean Bolean=true;
+        System.out.println("Bolean "+Bolean);
+        char Char ='a';
+        System.out.println("Char "+Char);
+        String string="bydvc";
+        System.out.println("string "+string);
+    }
+        /*
+        y esto es un comentario multilinea 
+         */
+}
