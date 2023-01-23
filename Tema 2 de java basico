@@ -1,0 +1,17 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Bienvenido, esta es una calculadora de iva");
+        float resultado=operacion(500);
+        System.out.println("total con iva incluido de 21%(general de españa)= "+  resultado );
+
+    }
+
+    static float operacion(float a) {
+        float total=a;
+        a/=100;
+        total+=a;
+        return total;
+    }
+}
