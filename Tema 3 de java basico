@@ -1,0 +1,13 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        String[] Nombres= {"Eduardo","Zesar","Mateo","Meliza"};
+        for (int i=0;i<3;i++){
+        Nombres[0]=(Nombres[0] + " " +Nombres[i+1]);
+            //System.out.println(Nombres[i]);
+        }
+        System.out.println(Nombres[0]);
+    }
+
+}
