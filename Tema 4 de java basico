@@ -1,0 +1,54 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        SmartWatch RelaWatch=new SmartWatch();
+        RelaWatch.Bateria="li-po";
+        RelaWatch.Costo=30;
+        RelaWatch.Sim="si";
+        RelaWatch.Pantalla="1.5 pulgadas";
+        RelaWatch.RefuersoVidrio="Gorilla 7";
+
+        SmartPhone RelaPhone;
+        RelaPhone=new SmartPhone();
+        RelaPhone.Bateria="li-po";
+        RelaPhone.Costo=1000;
+        RelaPhone.CantDeSim=2;
+        RelaPhone.Pantalla="6 pulgadas";
+        RelaPhone.RefuersoVidrio="Gorilla 8";
+
+        System.out.println("El Smarwatch es de "+"Bateria "+RelaWatch.Bateria +" Pantalla "+RelaWatch.Pantalla +" RefuersoVidrio "+RelaWatch.RefuersoVidrio +" Costo "+RelaWatch.Costo+" ESim "+RelaWatch.Sim );
+        System.out.println("**********************************************");
+        System.out.println("El SmarPhone es de "+"Bateria "+RelaPhone.Bateria +" Pantalla "+RelaPhone.Pantalla +" RefuersoVidrio "+RelaPhone.RefuersoVidrio +" Costo "+RelaPhone.Costo+" con "+RelaPhone.CantDeSim+" Puertos de SIM" );
+    }
+
+}
+
+abstract class SmartDivice {
+    String Bateria;
+    String Pantalla;
+    String RefuersoVidrio;
+    float Costo;
+
+    void toma(String Bateria,String Pantalla, String Refuerso, float Costo){
+
+    }
+
+}
+class SmartPhone extends SmartDivice{
+
+    int CantDeSim;
+    void toma(int CantDeSim){
+
+    }
+}
+ class SmartWatch extends SmartDivice {
+
+
+    String Sim;
+
+    void toma(String Sim){
+
+    }
+
+}
